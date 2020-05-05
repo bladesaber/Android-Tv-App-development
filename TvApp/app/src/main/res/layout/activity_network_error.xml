@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bladesaber.tvappvc1.NetworkError">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/a8"/>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="请检查你的网络连接"
+                android:textSize="30dp"
+                android:id="@+id/textView_NetworkError"
+                app:layout_widthPercent = "60%"
+                app:layout_heightPercent = "50%"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

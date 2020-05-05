@@ -1,0 +1,28 @@
+package bladesaber.luckgame2v1.SupportCompement.LoopRecycleView;
+
+/**
+ * Created by bladesaber on 2018/4/16.
+ */
+
+public class ListViewItem {
+
+    private String Name;
+    private String Present;
+
+    public String getName(){
+        return Name;
+    }
+
+    public String getPresent(){
+        return Present;
+    }
+
+    public void setName(String myName){
+        Name = myName;
+    }
+
+    public void setPresent(String myPresent){
+        Present = myPresent;
+    }
+
+}

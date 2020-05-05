@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="500px"
+    android:layout_height="320px">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="170px"
+        android:layout_height="170px"
+        android:layout_marginTop="30px"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/default_icon"
+        android:id="@+id/roll_lottery_winner_circle_icon"/>
+
+    <TextView
+        android:layout_below="@id/roll_lottery_winner_circle_icon"
+        android:layout_marginTop="20px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="30px"
+        android:textStyle="bold"
+        android:text="Davi"
+        android:id="@+id/roll_lottery_item_Name"/>
+
+    <TextView
+        android:layout_marginTop="10px"
+        android:layout_below="@id/roll_lottery_item_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30px"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:text="一等奖"
+        android:id="@+id/roll_lottery_item_Present"/>
+
+</RelativeLayout>

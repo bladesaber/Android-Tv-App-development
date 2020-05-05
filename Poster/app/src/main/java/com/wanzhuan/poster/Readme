@@ -1,0 +1,2 @@
+需求变更，PosterManager 用于最早期的单个模板播放。
+ContainerPosterManager 用于后期的多个模板顺序播放

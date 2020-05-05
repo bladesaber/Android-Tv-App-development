@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/shower_wall"
+    tools:context="com.wanzhuan.livegame.MainActivity"
+    android:background="@drawable/roll_lottery_background">
+
+    <ImageView
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_marginLeft="140px"
+        android:layout_marginTop="40px"
+        android:id="@+id/shower_wall_logo"
+        android:src="@drawable/logo"/>
+
+    <ImageView
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_marginTop="27px"
+        android:layout_marginLeft="1590px"
+        android:visibility="invisible"
+        android:background="#ffffff"
+        android:id="@+id/ercode_background"/>
+
+    <ImageView
+        android:layout_width="260px"
+        android:layout_height="260px"
+        android:layout_marginTop="47px"
+        android:layout_marginLeft="1610px"
+        android:id="@+id/ercode"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75px"
+        android:layout_marginLeft="1470px"
+        android:id="@+id/shower_wall_number_of_player"
+        android:gravity="bottom"
+        android:textStyle="bold"
+        android:textSize="48px"
+        android:text="0"/>
+
+    <TextView
+        android:layout_width="260px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="597px"
+        android:layout_marginLeft="1632px"
+        android:id="@+id/shower_wall_title"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="56px"
+        android:text="扫码参与大屏签到"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/shower_wall_number_of_player"
+        android:textStyle="bold"
+        android:textSize="24px"
+        android:layout_toRightOf="@+id/shower_wall_number_of_player"
+        android:text="/人"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1015px"
+        android:textSize="32px"
+        android:textStyle="bold"
+        android:id="@+id/shower_wall_customer_name"
+        android:text="玩转(广州)科技有限公司"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

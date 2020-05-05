@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">幸运翻一翻</string>
+    <string name="title_activity_ercode">ERCodeActivity</string>
+    <string name="title_activity_luck_pocker">LuckPockerActivity</string>
+</resources>

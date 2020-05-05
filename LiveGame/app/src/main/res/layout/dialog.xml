@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="600px"
+    android:layout_height="400px">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialog_title"
+        android:textSize="30px"
+        android:text="注册提示"/>
+
+    <TextView
+        android:layout_below="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialog_message"
+        android:textSize="30px"
+        android:text="注册信息显示"/>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30px"
+            android:text="positive_button"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/dialog_postivite_btn"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30px"
+            android:text="negative_button"
+            android:layout_alignParentRight="true"
+            android:id="@+id/dialog_negative_btn"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

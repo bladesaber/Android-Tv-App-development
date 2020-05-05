@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bladesaber.luckgamev1.LuckTable.LuckTableActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/background4" />
+
+        <bladesaber.luckgamev1.LuckTable.MyLuckTurnTable
+            android:id="@+id/LuckTable"
+            android:layout_width="830px"
+            android:layout_height="830px"
+            android:layout_marginLeft="544px"
+            android:layout_marginTop="113px" />
+
+        <ImageView
+            android:layout_width="234px"
+            android:layout_height="234px"
+            android:layout_marginLeft="843px"
+            android:layout_marginTop="410px"
+            android:scaleType="centerCrop"
+            android:src="@drawable/zhizhen" />
+
+        <RelativeLayout
+            android:layout_width="90px"
+            android:layout_height="63px"
+            android:layout_marginLeft="900px"
+            android:layout_marginTop="20px">
+
+            <!--
+            <ImageView
+                android:layout_width="31px"
+                android:layout_height="29px"
+                android:layout_marginLeft="125px"
+                android:layout_marginTop="18px"
+                android:src="@drawable/clock" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="174px"
+                android:layout_marginTop="20px"
+                android:text="倒计时"
+                android:textColor="#ffffff"
+                android:textSize="24px" />
+                -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="60"
+                android:textSize="50px"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:id="@+id/LuckTable_clock"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="70px"
+                android:textSize="25px"
+                android:layout_marginTop="18px"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="46px"
+            android:layout_height="45px"
+            android:layout_marginLeft="1700px"
+            android:layout_marginTop="40px"
+            android:id="@+id/Player_Image"
+            android:src="@drawable/error"/>
+
+        <TextView
+            android:layout_marginTop="49px"
+            android:layout_marginLeft="1750px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Player_Name"
+            android:text="小七"
+            android:textSize="30px"
+            android:textColor="#ffffff"/>
+
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

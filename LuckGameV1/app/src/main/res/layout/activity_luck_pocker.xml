@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bladesaber.luckgamev1.LuckPocker.LuckPockerActivity"
+    xmlns:pocker="http://bladesaber/myLuckPocker">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/background1"/>
+
+        <RelativeLayout
+            android:layout_marginTop="146px"
+            android:layout_marginLeft="98px"
+            android:layout_width="1094px"
+            android:layout_height="781px"
+            android:background="@drawable/background2">
+
+            <bladesaber.luckgamev1.LuckPocker.MyLuckPocker
+                android:layout_marginLeft="98px"
+                android:layout_marginTop="97px"
+                android:layout_width="187px"
+                android:layout_height="263px"
+                pocker:image_set = "0"
+                android:id="@+id/card1"/>
+
+            <bladesaber.luckgamev1.LuckPocker.MyLuckPocker
+                android:layout_marginLeft="336px"
+                android:layout_marginTop="97px"
+                android:layout_width="187px"
+                android:layout_height="263px"
+                pocker:image_set = "1"
+                android:id="@+id/card2"/>
+
+            <bladesaber.luckgamev1.LuckPocker.MyLuckPocker
+                android:layout_marginLeft="573px"
+                android:layout_marginTop="97px"
+                android:layout_width="187px"
+                android:layout_height="263px"
+                pocker:image_set = "2"
+                android:id="@+id/card3"/>
+
+            <bladesaber.luckgamev1.LuckPocker.MyLuckPocker
+                android:layout_marginLeft="811px"
+                android:layout_marginTop="97px"
+                android:layout_width="187px"
+                android:layout_height="263px"
+                pocker:image_set = "3"
+                android:id="@+id/card4"/>
+
+            <bladesaber.luckgamev1.LuckPocker.MyLuckPocker
+                android:layout_marginLeft="98px"
+                android:layout_marginTop="422px"
+                android:layout_width="187px"
+                android:layout_height="263px"
+                pocker:image_set = "4"
+                android:id="@+id/card5"/>
+
+            <bladesaber.luckgamev1.LuckPocker.MyLuckPocker
+                android:layout_marginLeft="336px"
+                android:layout_marginTop="422px"
+                android:layout_width="187px"
+                android:layout_height="263px"
+                pocker:image_set = "5"
+                android:id="@+id/card6"/>
+
+            <bladesaber.luckgamev1.LuckPocker.MyLuckPocker
+                android:layout_marginLeft="573px"
+                android:layout_marginTop="422px"
+                android:layout_width="187px"
+                android:layout_height="263px"
+                pocker:image_set = "6"
+                android:id="@+id/card7"/>
+
+            <bladesaber.luckgamev1.LuckPocker.MyLuckPocker
+                android:layout_marginLeft="811px"
+                android:layout_marginTop="422px"
+                android:layout_width="187px"
+                android:layout_height="263px"
+                pocker:image_set = "7"
+                android:id="@+id/card8"/>
+
+        </RelativeLayout>
+        
+        <ImageView
+            android:layout_marginLeft="1325px"
+            android:layout_marginTop="489px"
+            android:layout_width="450px"
+            android:layout_height="422px"
+            android:src="@drawable/lucklist"/>
+        
+        <ImageView
+            android:layout_width="314px"
+            android:layout_height="73px"
+            android:layout_marginTop="298px"
+            android:layout_marginLeft="1339px"
+            android:src="@drawable/title1"/>
+
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

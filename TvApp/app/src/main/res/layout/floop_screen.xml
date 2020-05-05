@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bladesaber.tvappvc1.FloopScreen.ScreenFlop1Activity"
+    android:background="@drawable/floop_screen">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="723px"
+        android:layout_marginTop="841px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重金霸屏 "
+            android:textStyle="bold"
+            android:textSize="72px"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/floop_screen_Time"
+            android:textSize="72px"
+            android:text="30"
+            android:textColor="#F1D434"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 秒"
+            android:textSize="72px"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+        
+    <ImageView
+        android:layout_width="119px"
+        android:layout_height="119px"
+        android:id="@+id/screen_floop_playericon"
+        android:src="@drawable/error"
+        android:layout_marginTop="65px"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/screen_floop_playername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="203px"
+        android:text="Sunshine"
+        android:textColor="#ffffff"
+        android:textSize="50px"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="1480px"
+        android:layout_height="wrap_content"
+        android:id="@+id/floop_screen_Text"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="元素炸裂元素炸裂元素炸裂元素炸裂元素炸裂"
+        android:textSize="140px"
+        android:textStyle="bold"
+        android:textColor="#F1D434"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="940px"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="倒计时 "
+            android:textColor="#ffffff"
+            android:textSize="50px"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/screen_floop_TimeClick"
+            android:gravity="center"
+            android:text="10"
+            android:textSize="50px"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 秒"
+            android:textColor="#ffffff"
+            android:textSize="50px"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

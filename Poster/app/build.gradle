@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+    defaultConfig {
+        applicationId "com.wanzhuan.poster"
+        minSdkVersion 22
+        targetSdkVersion 27
+        versionCode 3
+        versionName "1.0.2"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a','x86', 'x86_64', 'mips', 'mips64'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+            manifestPlaceholders = [
+                    XG_ACCESS_ID:"2100300089",
+                    XG_ACCESS_KEY:"AT78B2A3W5FJ",
+            ]
+        }
+
+    }
+
+    repositories {
+        maven {
+            url "https://maven.google.com"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:27.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+
+    compile 'com.daimajia.easing:library:2.0@aar'
+    compile 'com.daimajia.androidanimations:library:2.3@aar'
+    compile 'com.davemorrissey.labs:subsampling-scale-image-view:3.6.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.squareup.okhttp3:okhttp:3.6.0'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.tencent.bugly:crashreport:latest.release'
+    compile 'com.airbnb.android:lottie:2.5.1'
+
+    // 信鸽jar
+    compile 'com.tencent.xinge:xinge:3.2.3-release'
+    compile 'com.tencent.wup:wup:1.0.0.E-release'
+    compile 'com.tencent.mid:mid:4.0.6-release'
+}

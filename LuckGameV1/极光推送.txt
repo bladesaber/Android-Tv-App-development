@@ -1,0 +1,9 @@
+{Type:"LuckTable_Jump"}
+
+{Type:"LuckPocker_Jump"}
+
+{Type:"LuckTable_Start"}
+
+{Type:"LuckTable_End",id:1}
+
+{Type:"LuckPocker_id",id:2}

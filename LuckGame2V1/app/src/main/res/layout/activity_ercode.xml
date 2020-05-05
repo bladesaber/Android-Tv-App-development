@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bladesaber.luckgame2v1.ERCoddeActivity.ERCodeActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/dianzui2"
+            android:background="@drawable/background4"/>
+
+        <ImageView
+            android:layout_width="133px"
+            android:layout_height="54px"
+            android:layout_marginLeft="78px"
+            android:layout_marginTop="51px"
+            android:src="@drawable/mini_logo"/>
+
+        <ImageView
+            android:layout_marginLeft="1501px"
+            android:layout_marginTop="742px"
+            android:layout_width="293px"
+            android:layout_height="293px"
+            android:src="@drawable/er_code_background"/>
+
+        <ImageView
+            android:layout_marginLeft="1516px"
+            android:layout_marginTop="757px"
+            android:layout_width="270px"
+            android:layout_height="270px"
+            android:id="@+id/ER_Code_LuckPocker"/>
+        
+        <ImageView
+            android:layout_width="805px"
+            android:layout_height="902px"
+            android:src="@drawable/hongbao"
+            android:layout_marginLeft="171px"
+            android:layout_marginTop="189px" />
+        
+        <ImageView
+            android:layout_width="383px"
+            android:layout_height="83px"
+            android:layout_marginTop="134px"
+            android:layout_marginLeft="1167px"
+            android:src="@drawable/title"/>
+
+        <RelativeLayout
+            android:layout_width="735px"
+            android:layout_height="331px"
+            android:layout_marginLeft="1050px"
+            android:layout_marginTop="332px">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/Recycler_User_List"
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="95px"
+                android:layout_marginRight="95px"
+                android:layout_marginTop="60px"
+                android:layout_marginBottom="40px"/>
+
+        </RelativeLayout>
+        
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="153px"
+            android:layout_height="179px"
+            android:src="@drawable/giftem"
+            android:layout_marginLeft="1306px"
+            android:layout_marginTop="799px"/>
+
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

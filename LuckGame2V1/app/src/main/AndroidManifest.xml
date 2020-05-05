@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="bladesaber.luckgame2v1">
+
+    <!-- Required -->
+    <permission
+        android:name="com.wanzhuan.lottery.flop.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="com.wanzhuan.lottery.flop.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ERCoddeActivity.ERCodeActivity"
+            android:label="@string/title_activity_ercode"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LuckPocker.LuckPockerActivity"
+            android:label="@string/title_activity_luck_pocker"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <service
+            android:name=".AppUpdate.AppDownLoadService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver android:name=".ERCoddeActivity.ERCodeActivity$ERCodeActivityReceiver">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
+                <category android:name="com.wanzhuan.lottery.flop" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".JPush.JPushReceiver">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+
+                <category android:name="com.wanzhuan.lottery.flop" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".LuckPocker.LuckPockerActivity$LuckPockerActivityReceiver">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
+                <category android:name="com.wanzhuan.lottery.flop" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".SupportCompement.DialogActivity"
+            android:theme="@style/DialogActivity">
+
+        </activity>
+    </application>
+
+</manifest>

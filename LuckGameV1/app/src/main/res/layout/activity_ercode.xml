@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bladesaber.luckgamev1.ERCodeActivity.ERCodeActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/lucktable_background2" />
+
+        <ImageView
+            android:layout_width="133px"
+            android:layout_height="54px"
+            android:layout_marginLeft="78px"
+            android:layout_marginTop="51px"
+            android:src="@drawable/mini_logo"/>
+
+        <RelativeLayout
+            android:layout_width="832px"
+            android:layout_height="832px"
+            android:layout_marginLeft="102px"
+            android:layout_marginTop="124px">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/tablebackground1" />
+
+            <bladesaber.luckgamev1.SupportCompement.AnimatorImageView
+                android:layout_width="640px"
+                android:layout_height="640px"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/carton_ercode"
+                android:src="@drawable/giftest3" />
+
+            <ImageView
+                android:layout_width="234px"
+                android:layout_height="234px"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/zhizhen" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="800px"
+                android:layout_height="811px"
+                android:layout_marginTop="5px"
+                android:layout_marginLeft="15px"
+                android:src="@drawable/deng" />
+
+        </RelativeLayout>
+
+        <!--
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="801px"
+            android:layout_height="801px"
+            android:layout_marginTop="80px"
+            android:layout_marginLeft="80px"
+            android:id="@+id/gifImageView"
+            android:src="@drawable/carton"/>
+            -->
+
+        <ImageView
+            android:id="@+id/ER_Code_LuckTable"
+            android:layout_width="264px"
+            android:layout_height="264px"
+            android:layout_marginLeft="1517px"
+            android:layout_marginTop="743px" />
+
+        <RelativeLayout
+            android:layout_width="734px"
+            android:layout_height="330px"
+            android:layout_marginLeft="1060px"
+            android:layout_marginTop="333px">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/Recycler_User_List"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="60px"
+                android:layout_marginLeft="95px"
+                android:layout_marginRight="95px"
+                android:layout_marginTop="60px"
+                android:scrollbars="none" />
+
+        </RelativeLayout>
+
+        <!--
+        <ImageView
+            android:layout_marginTop="422px"
+            android:layout_marginLeft="1176px"
+            android:layout_width="276px"
+            android:layout_height="276px"
+            android:src="@drawable/example"
+            android:id="@+id/ER_Code_LuckPocker"/>
+            -->
+
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

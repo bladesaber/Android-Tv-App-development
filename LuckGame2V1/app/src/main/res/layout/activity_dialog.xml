@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1920px"
+    android:layout_height="match_parent"
+    tools:context="bladesaber.luckgame2v1.LuckPocker.LuckPockerActivity">
+
+    <ImageView
+        android:layout_centerInParent="true"
+        android:layout_width="2600px"
+        android:layout_height="2600px"
+        android:id="@+id/Dialoag_Guang"
+        android:src="@drawable/prizebackground"/>
+
+    <ImageView
+        android:layout_centerInParent="true"
+        android:layout_width="1920px"
+        android:layout_height="match_parent"
+        android:src="@drawable/result3"/>
+
+    <!--
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="451px"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="恭喜你，中奖啦！"
+        android:textSize="40px"/>
+        -->
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="603px"
+        android:textColor="#FF5138"
+        android:textSize="40px"
+        android:text="谢谢参与"
+        android:id="@+id/DialogText_DialogActivity"/>
+
+</RelativeLayout>
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bladesaber.luckgame2v1.MainActivity">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/reginster" />
+
+        <ImageView
+            android:layout_width="264px"
+            android:layout_height="264px"
+            android:layout_marginLeft="1517px"
+            android:layout_marginTop="743px"
+            android:id="@+id/Reginster_QR_Code"/>
+
+        <ImageView
+            android:layout_width="133px"
+            android:layout_height="54px"
+            android:layout_marginLeft="78px"
+            android:layout_marginTop="51px"
+            android:src="@drawable/mini_logo"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

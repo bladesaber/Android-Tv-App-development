@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bladesaber.tvappvc1.MainActivity">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/LinearLayout_MainActivity"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/ImageView_MainActivity"
+            android:layout_centerVertical="true"
+            app:layout_marginLeftPercent="3%"
+            app:layout_heightPercent="80%"
+            app:layout_widthPercent="57%"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:id="@+id/TextView_MainActivity"
+            android:text="Please Scan QR code"
+            android:layout_toRightOf="@+id/ImageView_MainActivity"
+            app:layout_marginLeftPercent="3%"
+            android:textSize="20dp"
+            app:layout_heightPercent="60%"
+            app:layout_widthPercent="35%"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

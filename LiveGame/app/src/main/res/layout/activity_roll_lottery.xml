@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wanzhuan.livegame.ActivitySet.RollLottery.RollLotteryActivity"
+    android:background="@drawable/roll_lottery_background">
+
+    <ImageView
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_marginLeft="140px"
+        android:layout_marginTop="50px"
+        android:id="@+id/roll_lottery_merchants_logo"
+        android:src="@drawable/logo" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58px"
+        android:layout_centerHorizontal="true"
+        android:textSize="56px"
+        android:textStyle="bold"
+        android:text="滚动抽奖"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1005px"
+        android:layout_centerHorizontal="true"
+        android:textSize="32px"
+        android:textStyle="bold"
+        android:id="@+id/roll_lottery_merchants_name"
+        android:text="玩转(广州)科技有限公司"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1666px"
+        android:id="@+id/roll_lottery_number_of_player"
+        android:gravity="bottom"
+        android:textStyle="bold"
+        android:textSize="48px"
+        android:text="0"
+        android:layout_alignBottom="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/roll_lottery_number_of_player"
+        android:textStyle="bold"
+        android:textSize="24px"
+        android:layout_toRightOf="@+id/roll_lottery_number_of_player"
+        android:text="/人"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginLeft="260px"
+        android:layout_marginTop="393px"
+        android:layout_width="702px"
+        android:layout_height="234px"
+        android:id="@+id/rollLettery_recycleview">
+
+    </android.support.v7.widget.RecyclerView>
+    
+    <ImageView
+        android:layout_width="1640px"
+        android:layout_height="760px"
+        android:layout_marginLeft="140px"
+        android:layout_marginTop="160px"
+        android:src="@drawable/roll_lottery_half_transparent"/>
+
+    <ImageView
+        android:layout_width="360px"
+        android:layout_height="360px"
+        android:layout_marginTop="320px"
+        android:layout_marginLeft="425px"
+        android:src="@drawable/roll_lottery_target"/>
+    
+    <ImageView
+        android:layout_width="630px"
+        android:layout_height="436px"
+        android:layout_marginTop="317px"
+        android:layout_marginLeft="1122px"
+        android:src="@drawable/roll_lottery_present_list"/>
+    
+    <ImageView
+        android:layout_width="45px"
+        android:layout_height="42px"
+        android:layout_marginTop="212px"
+        android:layout_marginLeft="1165px"
+        android:src="@drawable/roll_lottery_number_player" />
+
+    <TextView
+        android:layout_marginLeft="1246px"
+        android:layout_marginTop="220px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32px"
+        android:textStyle="bold"
+        android:text="获奖人数:"/>
+
+    <TextView
+        android:layout_marginLeft="1400px"
+        android:layout_marginTop="220px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32px"
+        android:textStyle="bold"
+        android:id="@+id/roll_lottery_winner_number"
+        android:text="10"/>
+
+    <ImageView
+        android:layout_width="42px"
+        android:layout_height="44px"
+        android:layout_marginTop="214px"
+        android:layout_marginLeft="212px"
+        android:src="@drawable/roll_lottery_activity_logo" />
+    
+    <TextView
+        android:layout_marginLeft="278px"
+        android:layout_marginTop="223px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32px"
+        android:textStyle="bold"
+        android:text="滚动抽奖"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="正在抽取："
+        android:textSize="32px"
+        android:layout_marginLeft="480px"
+        android:layout_marginTop="780px"
+        android:textStyle="bold"
+        android:textColor="#FEFEFE"
+        android:visibility="invisible"
+        android:id="@+id/roll_lottery_text1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="32px"
+        android:layout_marginLeft="650px"
+        android:layout_marginTop="780px"
+        android:textStyle="bold"
+        android:id="@+id/roll_lottery_present_text"
+        android:textColor="#D822D1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="32px"
+        android:layout_marginLeft="580px"
+        android:layout_marginTop="690px"
+        android:id="@+id/roll_lottery_winner_name"
+        android:textStyle="bold"
+        android:textColor="#FEFEFE"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1380px"
+        android:layout_marginTop="340px"
+        android:text="获奖名单"
+        android:textStyle="bold"
+        android:textColor="#EAED17"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="400px"
+        android:layout_marginLeft="1187px"
+        android:layout_width="500px"
+        android:layout_height="320px"
+        android:id="@+id/rollLettery_winnerlist">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <!--
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_marginTop="400px"
+        android:layout_marginLeft="1187px"
+        android:layout_width="500px"
+        android:layout_height="320px" />
+        -->
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/backcard"
+        android:scaleType="centerCrop"
+        android:id="@+id/Image_PockerItem"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="奖品1"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        app:layout_widthPercent = "80%"
+        android:visibility="invisible"
+        app:layout_marginTopPercent = "80%"
+        android:id="@+id/Text_PockerItem"/>
+
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bladesaber.tvappvc1.ViewPagerManager.PagerViewActivity">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#000000">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/ViewPager_Background"
+            android:visibility="visible"
+            android:background="@android:color/black"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:alpha="0.4"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.view.ViewPager
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/ViewPager_PagerViewActivity"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false">
+
+            </android.support.v4.view.ViewPager>
+
+        </RelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Percent_RelativeLayout_PagerViewActivity">
+
+            <com.example.bladesaber.tvappvc1.ViewPagerManager.AutoScrollTextView
+                android:id="@+id/Advertist_Line1"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:textColor="#000"
+                android:inputType="text"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                app:layout_marginTopPercent = "5%"
+                android:textSize="5dp"/>
+
+            <com.example.bladesaber.tvappvc1.ViewPagerManager.AutoScrollTextView
+                android:id="@+id/Advertist_Line2"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:textColor="#000"
+                android:inputType="text"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:layout_centerVertical="true"
+                android:textSize="5dp"/>
+
+            <com.example.bladesaber.tvappvc1.ViewPagerManager.AutoScrollTextView
+                android:id="@+id/Advertist_Line3"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:textColor="#000"
+                android:inputType="text"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:layout_alignBottom="@+id/TemView"
+                android:textSize="5dp"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/TemView"/>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="1517px"
+                android:layout_marginTop="700px"
+                android:id="@+id/linearLayout_PageViewActivity"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:background="#ffffff">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="扫码霸屏"
+                    android:textSize="50px" />
+
+                <ImageView
+                    android:layout_marginTop="5px"
+                    android:id="@+id/FloopScreenImagView"
+                    android:layout_width="264px"
+                    android:layout_height="264px" />
+
+            </LinearLayout>
+
+        </android.support.percent.PercentRelativeLayout>
+
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

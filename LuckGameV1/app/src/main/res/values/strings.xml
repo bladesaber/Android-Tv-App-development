@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">幸运大转盘</string>
+    <string name="title_activity_luck_pocker">LuckPockerActivity</string>
+    <string name="title_activity_luck_table">LuckTableActivity</string>
+    <string name="title_activity_ercode">ERCodeActivity</string>
+    <string name="title_activity_dialog">DialogActivity</string>
+</resources>
